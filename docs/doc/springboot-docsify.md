@@ -29,6 +29,7 @@
 
 或者也可以部署到比如`GitHub Pages`，参考：[https://docsify.js.org/#/zh-cn/deploy](https://docsify.js.org/#/zh-cn/deploy)
 
-注意：当前站点的内容放在 [https://github.com/bytesfly/springboot-demo](https://github.com/bytesfly/springboot-demo) 的`docs`目录下，所以在设置页面开启`GitHub Pages`功能并选择`master`分支、`/docs`目录，如下：
+注意：当前站点的内容放在 [https://github.com/bytesfly/springboot-demo](https://github.com/bytesfly/springboot-demo) 的`docs`目录下，所以在设置页面开启`GitHub Pages`功能并选择`master`分支、`/docs`目录，如下：  
 
+![](https://img2020.cnblogs.com/blog/1546632/202109/1546632-20210927100649672-1039112134.png)
 

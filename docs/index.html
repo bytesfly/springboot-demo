@@ -8,8 +8,6 @@
   <meta name="keywords" content="springboot-demo bytesfly 字节飞扬" />
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta name="referrer" content="no-referrer" />
-
-  <link rel="icon" href="https://cdn.jsdelivr.net/gh/wugenqiang/StaticRepo/images/favicon.ico">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
 </head>
 <body>
@@ -56,6 +54,13 @@
   <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code"></script>
+
+  <!-- 实现离线化 -->
+  <script>
+    if (typeof navigator.serviceWorker !== 'undefined') {
+      navigator.serviceWorker.register('pwa.js')
+    }
+  </script>
 
 </body>
 </html>
