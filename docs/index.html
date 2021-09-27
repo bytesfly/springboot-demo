@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>springboot-demo</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="springboot-demo">
+  <meta name="keywords" content="springboot-demo bytesfly 字节飞扬" />
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="referrer" content="no-referrer" />
+
+  <link rel="icon" href="https://cdn.jsdelivr.net/gh/wugenqiang/StaticRepo/images/favicon.ico">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
+</head>
+<body>
+  <div id="app">代码改变世界</div>
+  <script>
+    window.$docsify = {
+      name: 'springboot-demo',
+      nameLink: 'https://bytesfly.github.io/springboot-demo/',
+      repo: 'bytesfly/springboot-demo',
+      loadSidebar: 'SUMMARY.md',
+      homepage: 'README.md',
+      subMaxLevel: 2,
+      //自动显示标题
+      autoHeader: true,
+      //自动跳转到页面顶部
+      auto2top: true,
+      //小屏设备下合并导航栏到侧边栏
+      mergeNavbar: true,
+      //搜索插件
+      search: {
+        placeholder: '搜索',
+        noData: '没有结果！',
+      },
+      plugins: [
+        // footer
+        function(hook) {
+          var footer = [
+            '<hr/>',
+            '<footer>',
+            '<span>互联网是有记忆的，我想留下一些成长的脚印。 —— <a href="https://www.cnblogs.com/bytesfly/" target="_blank">字节飞扬</a></span><br/>',
+            '</footer>'
+          ].join('');
+
+          hook.afterEach(function(html) {
+            return html + footer;
+          });
+        }
+      ]
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-java.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code"></script>
+
+</body>
+</html>
