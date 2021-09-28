@@ -23,7 +23,7 @@
 
         <springboot.version>2.5.4</springboot.version>
         <hutool.version>5.7.13</hutool.version>
-
+        <swagger.version>3.0.0</swagger.version>
     </properties>
 
     <repositories>
