@@ -4,9 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DocsifyApplication {
+public class DocsifyApp {
 
     public static void main(String[] args) {
-        SpringApplication.run(DocsifyApplication.class, args);
+        SpringApplication.run(DocsifyApp.class, args);
     }
 }

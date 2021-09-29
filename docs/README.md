@@ -26,5 +26,6 @@
 | `springboot-common` |     一些通用工具和依赖                                                |
 | `springboot-docsify`       |     在`springboot`中使用`docsify`，让项目文档更优雅                                                                     |
 | `springboot-validation`        |     在`springboot`中使用`validation`，让参数校验更优雅                                               |
+| `springboot-jwt-swagger`        |     `springboot`加了`JWT`验证，如何在`swagger-ui`上访问后端接口呢                                               |
 
 

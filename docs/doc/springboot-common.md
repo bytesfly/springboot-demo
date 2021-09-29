@@ -13,7 +13,6 @@
 
 对`jackson`的库简单封装，让序列化、反序列化`json`更方便一点。
 
-- [JwtTool]()
+- [JwtTool](https://github.com/bytesfly/springboot-demo/blob/master/springboot-common/src/main/java/com/bytesfly/common/JwtTool.java)
 
-TODO
-
+`Hutool`从`5.7.0`提供了零依赖的`JWT`（`JSON Web Token`）实现，很轻量级，源码也容易阅读，所以写了个简单的`Demo`(注意：实际的项目还需要根据具体的需求去做身份验证，这里仅是用于演示)，正好 [springboot-jwt-swagger](springboot-jwt-swagger.md) 模块也需要用到这个工具类。

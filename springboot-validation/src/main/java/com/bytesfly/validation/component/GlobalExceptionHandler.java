@@ -70,7 +70,7 @@ public class GlobalExceptionHandler {
     @ResponseStatus(HttpStatus.UNAUTHORIZED)
     public ApiResponse authExceptionHandler(HttpServletRequest request,
                                             AuthException e) {
-        logError("身份验证异常", request, e);
+        logError("身份验证失败", request, e);
 
         return ApiResponse.failed(e.getMessage(), HttpStatus.UNAUTHORIZED.value());
     }

@@ -1,0 +1,12 @@
+server:
+  port: 8082
+  servlet.context-path: /
+
+springfox:
+  documentation:
+    # 开发测试阶段开启，线上环境建议关闭
+    enabled: true
+    swagger-ui:
+      enabled: true
+      # 默认/swagger-ui/index.html
+      base-url: ""

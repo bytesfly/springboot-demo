@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>springboot-validation</artifactId>
+    <artifactId>springboot-jwt-swagger</artifactId>
 
     <properties>
 
@@ -19,24 +19,14 @@
 
         <dependency>
             <groupId>com.bytesfly</groupId>
-            <artifactId>springboot-common</artifactId>
+            <artifactId>springboot-validation</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
 
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-validation</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-boot-starter</artifactId>
-            <version>${swagger.version}</version>
+            <groupId>com.alibaba</groupId>
+            <artifactId>transmittable-thread-local</artifactId>
+            <version>${ttl.version}</version>
         </dependency>
 
     </dependencies>
@@ -50,7 +40,6 @@
                 <version>${springboot.version}</version>
                 <configuration>
                     <executable>true</executable>
-                    <classifier>exec</classifier>
                 </configuration>
                 <executions>
                     <execution>

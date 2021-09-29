@@ -13,6 +13,7 @@
         <module>springboot-common</module>
         <module>springboot-docsify</module>
         <module>springboot-validation</module>
+        <module>springboot-jwt-swagger</module>
     </modules>
 
     <properties>
@@ -24,6 +25,7 @@
         <springboot.version>2.5.4</springboot.version>
         <hutool.version>5.7.13</hutool.version>
         <swagger.version>3.0.0</swagger.version>
+        <ttl.version>2.12.1</ttl.version>
     </properties>
 
     <repositories>
