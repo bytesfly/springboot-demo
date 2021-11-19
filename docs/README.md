@@ -27,5 +27,6 @@
 | `springboot-docsify`       |     在`springboot`中使用`docsify`，让项目文档更优雅                                                                     |
 | `springboot-validation`        |     在`springboot`中使用`validation`，让参数校验更优雅                                               |
 | `springboot-jwt-swagger`        |     `springboot`加了`JWT`验证，如何在`swagger-ui`上访问后端接口呢                                               |
+| `springboot-mybatis-plus`        |     `springboot`+`MyBatis-Plus`最佳搭档，只需简单配置，即可快速进行单表`CRUD`操作                                               |
 
 

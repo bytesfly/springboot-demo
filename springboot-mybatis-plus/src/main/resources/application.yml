@@ -1,0 +1,48 @@
+server:
+  port: 8083
+  servlet.context-path: /
+
+spring:
+  sql:
+    init:
+      schema-locations: classpath:db/schema-h2.sql
+      data-locations: classpath:db/data-h2.sql
+
+  # 数据库配置
+  datasource:
+    url: jdbc:h2:mem:test;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=true;DATABASE_TO_UPPER=false;MODE=PostgreSQL
+    username: postgres
+    password: postgres
+    # 使用阿里的Druid连接池
+    type: com.alibaba.druid.pool.DruidDataSource
+    # Druid连接池配置信息
+    druid:
+      # 初始化连接池数量
+      initial-size: 1
+      # 最小连接池数量
+      min-idle: 1
+      # 最大连接池数量
+      maxActive: 32
+      # 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒
+      timeBetweenEvictionRunsMillis: 60000
+      # 配置一个连接在池中最小生存的时间，单位是毫秒
+      minEvictableIdleTimeMillis: 30000
+      # 用来检测连接是否有效，要求是一个查询语句。
+      validationQuery: SELECT 1
+      # 连接空闲时执行validationQuery检测(是否空闲根据timeBetweenEvictionRunsMillis等判断)
+      testWhileIdle: true
+      # 申请连接时执行validationQuery检测
+      testOnBorrow: false
+      # 归还连接时执行validationQuery检测
+      testOnReturn: false
+      query-timeout: 180
+      kill-when-socket-read-timeout: on
+
+mybatis-plus:
+  global-config:
+    db-config:
+      column-format: "\"%s\""
+
+logging:
+  level:
+    com.bytesfly.mybatis.mapper: debug

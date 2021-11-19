@@ -4,4 +4,4 @@
   * [springboot-docsify](doc/springboot-docsify.md)
   * [springboot-validation](doc/springboot-validation.md)
   * [springboot-jwt-swagger](doc/springboot-jwt-swagger.md)
-  * [springboot-mybatis-plus](doc/springboot-validation.md)
+  * [springboot-mybatis-plus](doc/springboot-mybatis-plus.md)
