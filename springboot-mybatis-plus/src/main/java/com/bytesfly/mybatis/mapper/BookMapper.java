@@ -15,7 +15,7 @@ import java.util.List;
 public interface BookMapper extends BaseMapper<Book> {
 
     @ResultMap("auto.mybatis-plus_BookAgg")
-    @Select({"SELECT tb_book.id, max(tb_book.name) as name, max(tb_book.author) as author, array_agg(distinct tb_hero.id order by tb_hero.id asc) as hero_ids" +
+    @Select({"SELECT tb_book.id, max(tb_book.name) as name, array_agg(distinct tb_hero.id order by tb_hero.id asc) as hero_ids" +
             " FROM tb_hero" +
             " INNER JOIN tb_book" +
             " ON tb_hero.bid = tb_book.id" +

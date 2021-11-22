@@ -55,6 +55,8 @@ public class MybatisPlusConfig {
     @PostConstruct
     public void initAutoResultMap() {
         try {
+            log.info("--- start register @AutoResultMap ---");
+
             String namespace = "auto";
 
             String packageName = "com.bytesfly.mybatis.model.db.resultmap";
@@ -74,6 +76,8 @@ public class MybatisPlusConfig {
                     ReflectUtil.invoke(tableInfo, "initResultMapIfNeed");
                 }
             }
+
+            log.info("--- finish register @AutoResultMap ---");
         } catch (Throwable e) {
             log.error("initAutoResultMap error", e);
             System.exit(1);
